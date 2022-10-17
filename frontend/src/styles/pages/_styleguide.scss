@@ -1,0 +1,19 @@
+.p-styleguide {
+  padding: 20px;
+}
+
+.p-styleguide__section {
+  margin-bottom: 100px;
+}
+
+.p-styleguide__section > * {
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.p-styleguide__title {
+  margin-bottom: 50px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $c-black-600;
+}

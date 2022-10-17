@@ -1,0 +1,90 @@
+// Page Footer
+.l-footer {
+  @include container;
+}
+
+// Page Footer Inner Wrapper
+.l-footer__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top: 2px solid $c-line;
+  padding: 20px 0 24px;
+
+  @include bp-up(lg) {
+    flex-direction: row;
+    padding: 80px 0 90px;
+  }
+}
+
+// Page Footer Description
+.l-footer__description > p {
+  @include paragraph-1;
+  margin-top: 20px;
+  max-width: 505px;
+  color: $c-gray-600;
+
+  @include bp-up(lg) {
+    @include paragraph-3;
+    margin-top: 36px;
+    color: $c-black-600;
+  }
+}
+
+// Page Footer Navigation
+.l-footer__nav {
+  display: flex;
+  margin-top: 30px;
+
+  @include bp-up(lg) {
+    margin-top: 0;
+  }
+}
+
+.l-footer__nav .l-footer__nav-section {
+  &:not(:last-child) {
+    margin-right: 30px;
+
+    @include bp-up(lg) {
+      margin-right: 100px;
+    }
+  }
+}
+.l-footer__nav .l-footer__nav-title {
+  @include heading-6;
+  color: $c-black-600;
+  margin-bottom: 14px;
+
+  @include bp-up(lg) {
+    @include heading-4;
+    margin-bottom: 20px;
+  }
+}
+
+.l-footer__nav ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.l-footer__nav ul li {
+  &:not(:last-child) {
+    margin-bottom: 6px;
+
+    @include bp-up(lg) {
+      margin-bottom: 12px;
+    }
+  }
+}
+
+.l-footer__nav ul li a {
+  @include paragraph-1;
+  @include text-underline;
+  color: $c-gray-600;
+  text-decoration: none;
+
+  @include bp-up(lg) {
+    @include paragraph-3;
+    color: $c-black-600;
+  }
+}

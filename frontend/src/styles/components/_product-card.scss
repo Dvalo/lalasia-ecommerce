@@ -1,0 +1,40 @@
+.c-product-card__image {
+  position: relative;
+  height: 220px;
+
+  @include bp-up(md) {
+    height: 280px;
+  }
+
+  @include bp-up(lg) {
+    height: 360px;
+  }
+}
+
+.c-product-card__content {
+  margin-top: 26px;
+}
+
+.c-product-card__category {
+  color: $c-gray-600;
+  margin-bottom: 14px;
+}
+
+.c-product-card__title {
+  color: $c-black-600;
+  margin-bottom: 6px;
+}
+
+.c-product-card__snippet {
+  @include paragraph-3;
+  color: $c-gray-600;
+  margin-bottom: 18px;
+
+  p {
+    margin: 0;
+  }
+}
+
+.c-product-card__price {
+  color: $c-black-600;
+}

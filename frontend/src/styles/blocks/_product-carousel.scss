@@ -1,0 +1,39 @@
+.b-products-carousel {
+  @include component-spacing;
+}
+
+.b-products-carousel__content {
+  @include container;
+  text-align: center;
+}
+
+.b-products-carousel__eyebrow {
+  margin-bottom: 14px;
+}
+
+.b-products-carousel__title {
+  margin-bottom: 30px;
+}
+
+.b-products-carousel__desc {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.b-products-carousel__items {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.b-products-carousel__item.swiper-slide {
+  width: 80%;
+
+  @include bp-up(md) {
+    width: 60%;
+  }
+
+  @include bp-up(lg) {
+    width: 30%;
+  }
+}

@@ -1,0 +1,11 @@
+.c-scroll-image {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+.c-scroll-image__inner {
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.16, 0.82, 0.42, 1);
+}

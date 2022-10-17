@@ -1,0 +1,87 @@
+@mixin button {
+  cursor: pointer;
+  background: 0;
+  border: unset;
+  padding: 15px 46px;
+}
+
+.button {
+  @include button;
+  @include heading-6--small;
+  color: $c-white;
+  transition: background 0.35s ease,
+    opacity 0.5s cubic-bezier(0.16, 0.82, 0.42, 1);
+
+  &:hover,
+  &:focus-visible {
+    .button__text {
+      transform: translateY(-150%);
+    }
+  }
+
+  @include bp-up(lg) {
+    @include heading-5;
+  }
+}
+
+a.button {
+  text-decoration: none;
+  width: fit-content;
+  display: block;
+}
+
+.button__text-wrapper {
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.button__text {
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.16, 0.82, 0.42, 1);
+
+  &::after {
+    content: attr(data-text);
+    position: absolute;
+    top: 150%;
+    left: 0;
+  }
+}
+
+.button__icon {
+  display: flex;
+  margin-left: 12px;
+  align-items: center;
+}
+
+// Primary button
+@mixin button-primary {
+  background: $c-primary;
+
+  &:hover,
+  &:focus-visible {
+    background: $c-green-700;
+    transition-delay: 0.05s;
+  }
+}
+
+.button--primary {
+  @include button-primary;
+}
+
+// Secondary button
+@mixin button-secondary {
+  background: $c-white;
+  border: 2px solid $c-line;
+  color: $c-black-600;
+
+  &:hover,
+  &:focus-visible {
+    background: $c-line;
+    transition-delay: 0.05s;
+  }
+}
+
+.button--secondary {
+  @include button-secondary;
+}

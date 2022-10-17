@@ -1,0 +1,195 @@
+// Fonts
+@font-face {
+  font-weight: 400;
+  font-family: eudoxus sans;
+  font-style: normal;
+  font-display: block;
+  src: url("../../../public/fonts/EudoxusSans-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: eudoxus sans;
+  font-style: normal;
+  font-display: block;
+  src: url("../../../public/fonts/EudoxusSans-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: eudoxus sans;
+  font-style: normal;
+  font-display: block;
+  src: url("../../../public/fonts/EudoxusSans-Bold.woff2") format("woff2");
+}
+
+// Headings
+@mixin heading {
+  font-family: $font-eudoxus;
+  line-height: 1.3;
+  font-weight: 700;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+// Heading 1
+@mixin heading-1 {
+  @include heading;
+  font-size: 64px;
+}
+
+h1,
+.h1 {
+  @include heading-1;
+}
+
+// Heading 2
+@mixin heading-2 {
+  @include heading;
+  font-size: 44px;
+}
+
+h2,
+.h2 {
+  @include heading-2;
+}
+
+// Heading 3
+@mixin heading-3 {
+  @include heading;
+  font-size: 24px;
+}
+
+h3,
+.h3 {
+  @include heading-3;
+}
+
+// Heading 4
+@mixin heading-4 {
+  @include heading;
+  font-size: 20px;
+}
+
+h4,
+.h4 {
+  @include heading-4;
+}
+
+// Heading 5
+@mixin heading-5 {
+  @include heading;
+  font-size: 18px;
+}
+
+h5,
+.h5 {
+  @include heading-5;
+}
+
+// Heading 6
+@mixin heading-6 {
+  @include heading;
+  font-size: 16px;
+}
+
+h6,
+.h6 {
+  @include heading-6;
+}
+
+// Heading 6 - small
+@mixin heading-6--small {
+  @include heading;
+  font-size: 14px;
+}
+
+h6.small,
+.h6.small {
+  @include heading-6--small;
+}
+
+// Labels
+@mixin labels {
+  font-family: $font-eudoxus;
+  line-height: 1.3;
+  font-weight: 700;
+}
+
+// Label 1
+@mixin label-1 {
+  @include labels;
+  font-size: 18px;
+}
+
+.label-1 {
+  @include label-1;
+}
+
+// Label 2
+@mixin label-2 {
+  @include labels;
+  font-size: 16px;
+}
+
+.label-2 {
+  @include label-2;
+}
+
+// Label 3
+@mixin label-3 {
+  @include labels;
+  font-size: 14px;
+}
+
+.label-3 {
+  @include label-3;
+}
+
+// Paragraphs
+@mixin paragraphs {
+  font-family: $font-eudoxus;
+  line-height: 1.8;
+  font-weight: 500;
+  margin: 0;
+}
+
+// Paragraph 1
+@mixin paragraph-1 {
+  @include paragraphs;
+  font-size: 14px;
+}
+
+p.paragraph-1 {
+  @include paragraph-1;
+}
+
+// Paragraph 2
+@mixin paragraph-2 {
+  @include paragraphs;
+  font-size: 16px;
+}
+
+p.paragraph-2 {
+  @include paragraph-2;
+}
+
+// Paragraph 3
+@mixin paragraph-3 {
+  @include paragraphs;
+  font-size: 18px;
+}
+
+p.paragraph-3 {
+  @include paragraph-3;
+}
+
+// Paragraph 4
+@mixin paragraph-4 {
+  @include paragraphs;
+  font-size: 20px;
+}
+
+p.paragraph-4 {
+  @include paragraph-4;
+}

@@ -1,0 +1,69 @@
+.c-about-us {
+  @include container;
+  @include component-spacing;
+}
+
+.c-about-us__info-eyebrow {
+  margin-bottom: 14px;
+}
+
+.c-about-us__info-title {
+  max-width: 515px;
+  margin-bottom: 50px;
+}
+
+.c-about-us__info-desc {
+  max-width: 580px;
+  margin-bottom: 50px;
+}
+
+.c-about-us__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  @include bp-up(lg) {
+    flex-direction: row;
+  }
+}
+
+.c-about-us__info,
+.c-about-us__stats {
+  flex: 1;
+}
+
+.c-about-us__stats {
+  overflow: hidden;
+}
+
+.c-about-us__stats-image,
+.c-about-us__info-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.c-about-us__info-image {
+  height: 260px;
+  margin-top: 50px;
+}
+
+.c-about-us__stats-image {
+  height: 260px;
+  margin-top: 30px;
+
+  @include bp-up(lg) {
+    height: 100%;
+    margin-top: 60px;
+  }
+}
+
+.c-about-us__stats-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+
+  @include bp-up(lg) {
+    justify-content: flex-end;
+    gap: 60px;
+  }
+}

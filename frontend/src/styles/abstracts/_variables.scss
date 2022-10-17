@@ -1,0 +1,57 @@
+// Colors - Green
+$c-green-100: #dce7e6;
+$c-green-200: #c5d6d5;
+$c-green-300: #a8c2c0;
+$c-green-400: #8baeab;
+$c-green-500: #6e9996;
+$c-green-600: #518581;
+$c-green-700: #3a6663;
+
+// Colors - Orange
+$c-orange-100: #fff0d9;
+$c-orange-200: #ffe5bf;
+$c-orange-300: #ffd89f;
+$c-orange-400: #ffcc7f;
+$c-orange-500: #ffbf5f;
+$c-orange-600: #ffb23f;
+
+// Colors - Black
+$c-black-100: #d0d0cf;
+$c-black-200: #b1b1b0;
+$c-black-300: #8a8988;
+$c-black-400: #636260;
+$c-black-500: #3c3b39;
+$c-black-600: #151411;
+
+// Colors - Gray
+$c-gray-100: #efeff0;
+$c-gray-200: #e4e4e6;
+$c-gray-300: #d7d6da;
+$c-gray-400: #cac8ce;
+$c-gray-500: #bcbbc1;
+$c-gray-600: #afadb5;
+
+// Colors - White
+$c-white: #fff;
+$c-white-100: #fefefe;
+$c-white-200: #fdfdfd;
+$c-white-300: #fcfcfc;
+$c-white-400: #fbfbfb;
+$c-white-500: #fafafa;
+$c-white-600: #f9f9f9;
+$c-white-700: #f3f3f3;
+
+// Colors - Main color mapping
+$c-primary: $c-green-600;
+$c-secondary: $c-orange-600;
+$c-line: $c-white-700;
+
+// Fonts
+$font-eudoxus: eudoxus sans;
+
+// Breakpoints
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px,
+);

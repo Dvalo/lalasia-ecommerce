@@ -1,0 +1,30 @@
+.b-products-listing {
+  @include container;
+  @include component-spacing;
+}
+
+.b-products-listing__title {
+  @include heading-2;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.b-products-listing__title span {
+  @include heading-6;
+  padding: 10px 16px;
+  background: $c-white-600;
+  color: $c-green-600;
+  margin-left: 10px;
+}
+
+.b-products-listing__items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+
+  @include bp-up(lg) {
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

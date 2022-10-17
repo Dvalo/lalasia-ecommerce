@@ -1,0 +1,61 @@
+// Breakpoints
+@mixin bp-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint does not exist: `#{$breakpoint}`";
+  }
+}
+
+// Component spacing
+@mixin component-spacing() {
+  margin: 50px 0;
+
+  @include bp-up(lg) {
+    margin: 160px 0;
+  }
+}
+
+// Container mixin
+@mixin container() {
+  padding-right: 24px;
+  padding-left: 24px;
+
+  @include bp-up(md) {
+    padding-right: 64px;
+    padding-left: 64px;
+  }
+
+  @include bp-up(lg) {
+    padding-right: 100px;
+    padding-left: 100px;
+  }
+}
+
+// Stagger Reveal
+@mixin stagger-reveal($initial: 0, $increase: 0.1, $count: 20) {
+  @for $i from 1 through $count {
+    $initial: $initial + $increase;
+    &:nth-of-type(#{$i}) {
+      transition-delay: #{$initial}s;
+    }
+  }
+}
+
+// Text underline
+@mixin text-underline($color: currentColor, $spacing: 3px, $height: 2px) {
+  text-decoration: none;
+  padding-bottom: $spacing;
+  background-image: linear-gradient($color, $color);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% $height;
+  transition: background-size 0.4s;
+
+  &:hover,
+  &:focus-visible {
+    background-size: 100% $height;
+  }
+}
