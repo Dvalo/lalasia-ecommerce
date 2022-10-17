@@ -2,8 +2,6 @@ uuid: 1c1a0137-b9d5-40ca-9a2d-a34f81a1e508
 langcode: en
 status: true
 dependencies:
-  config:
-    - taxonomy.vocabulary.tags
   module:
     - comment
     - contextual
@@ -11,7 +9,6 @@ dependencies:
     - node
     - path
     - system
-    - taxonomy
     - toolbar
     - tour
 _core:
@@ -28,10 +25,8 @@ permissions:
   - 'access toolbar'
   - 'access tour'
   - 'administer url aliases'
-  - 'create terms in tags'
   - 'create url aliases'
   - 'edit own comments'
-  - 'edit terms in tags'
   - 'revert all revisions'
   - 'view all revisions'
   - 'view own unpublished content'

@@ -1,0 +1,8 @@
+uuid: ac689d53-3792-4751-87d7-12d35ac4c193
+langcode: en
+status: true
+dependencies: {  }
+name: Category
+vid: category
+description: 'Use category to group similar products.'
+weight: 0
